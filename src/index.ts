@@ -1,7 +1,8 @@
+import colors from "colors";
 import server from "./server";
 
 const port = process.env.PORT || 4000;
 
 server.listen(port, () => {
-    console.log('Running server: ', port);
+    console.log(colors.bgMagenta.magenta.italic(`Running server: ${port}`,));
 });
